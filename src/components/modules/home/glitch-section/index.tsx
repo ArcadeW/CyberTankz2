@@ -13,7 +13,7 @@ export default function GlitchSection({
   return (
     <div
       className={cn(
-        "flex flex-col items-top justify-top min-h-screen",
+        "flex flex-col items-top justify-top",
         distopianFont.className,
         styles.body
       )}
