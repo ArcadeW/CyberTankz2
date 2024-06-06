@@ -357,3 +357,7 @@
 .cybr-btn:nth-of-type(2) {
   --primary-hue: 260;
 }
+
+button.cybr-btn.w-fit.h-12 {
+    --shadow-primary: hsl(66.98deg 100% 50%);
+}
