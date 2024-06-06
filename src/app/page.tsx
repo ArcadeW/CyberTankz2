@@ -39,12 +39,7 @@ export default function Home() {
           <p className="text-center text-lg font-semibold mb-4">
             <strong>Price:</strong> For free
           </p>
-          <a
-            href="https://www.cybertankzforum.com/register/"
-            className="reserve-btn px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
-          >
-            Reserve your nick here
-          </a>
+          <button class="cybr-btn w-fit h-12">Reserve your nick here<span aria-hidden="true">_</span><span aria-hidden="true" class="cybr-btn__glitch">Reserve your nick here<!-- -->_</span><span aria-hidden="true" class="cybr-btn__tag">RESERVE</span></button>
         </div>
 
         {/* Premium Nickname Box */}
