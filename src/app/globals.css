@@ -465,58 +465,6 @@ html:not(.is-mobile) ::-webkit-scrollbar-thumb {
   border: 3px solid #141414;
 }
 
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.bg-gray-100 {
-  background-color: #f3f4f6;
-}
-
-.rounded {
-  border-radius: 0.5rem;
-}
-
-.shadow-lg {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
 .reserve-btn {
   font-family: Cyber, sans-serif;
   color: #fff;
@@ -616,4 +564,3 @@ html:not(.is-mobile) ::-webkit-scrollbar-thumb {
     clip-path: polygon(0 2%, 100% 2%, 100% 95%, 95% 95%, 95% 90%, 85% 90%, 85% 95%, 8% 95%, 0 70%);
   }
 }
-
