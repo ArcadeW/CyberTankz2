@@ -104,7 +104,5 @@ export default function GlitchSection({
     </a>
   </div>
 </div>
-
-    </div>
   );
 }
