@@ -41,7 +41,8 @@ export default function Home() {
           </p>
           <a
             href="https://www.cybertankzforum.com/register/"
-            className="reserve-btn px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" style="margin-top: 71px;"
+            className="reserve-btn px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700" 
+            style={{ marginTop: '71px' }} 
           >
             Reserve your nick here
           </a>
