@@ -23,7 +23,8 @@ export default function Home() {
         feedback, but rest assured that both new and old fan-favourite features
         are in store. Join us as we embark on a rewritten past with CyberTankz!"
       />
-      
+
+      <flex flex-col items-center justify-center gap-4 p-5
         {/* Free Nickname Box */}
         <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg">
           <img
@@ -87,7 +88,7 @@ export default function Home() {
             className="reserve-btn px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
           >
             Reserve your nick here
-          </a>
+          </a>>
         </div>
       </div>
     </main>
