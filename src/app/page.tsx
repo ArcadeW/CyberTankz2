@@ -24,9 +24,9 @@ export default function Home() {
         are in store. Join us as we embark on a rewritten past with CyberTankz!"
       />
 
-<div className="flex flex-wrap justify-center items-stretch gap-4 p-5">
+<div className="flex flex-wrap justify-center p-5">
   <!-- Free Nickname Box -->
-  <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg w-80">
+  <div className="flex flex-col items-center justify-center w-full sm:w-auto p-5 bg-gray-100 rounded shadow-lg mx-2 mb-4">
     <img
       src="https://i.imgur.com/bGiCzi1.png"
       alt="Free Nickname Logo"
@@ -48,7 +48,7 @@ export default function Home() {
   </div>
 
   <!-- Premium Nickname Box -->
-  <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg w-80">
+  <div className="flex flex-col items-center justify-center w-full sm:w-auto p-5 bg-gray-100 rounded shadow-lg mx-2 mb-4">
     <img
       src="https://i.imgur.com/DO8C8NG.png"
       alt="Premium Nickname Logo"
@@ -70,7 +70,7 @@ export default function Home() {
   </div>
 
   <!-- Elite Nickname Box -->
-  <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg w-80">
+  <div className="flex flex-col items-center justify-center w-full sm:w-auto p-5 bg-gray-100 rounded shadow-lg mx-2 mb-4">
     <img
       src="https://i.imgur.com/eLK5cns.png"
       alt="Elite Nickname Logo"
@@ -91,6 +91,7 @@ export default function Home() {
     </a>
   </div>
 </div>
+
 
     </main>
   );
