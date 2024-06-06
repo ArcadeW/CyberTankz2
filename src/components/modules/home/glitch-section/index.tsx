@@ -36,6 +36,12 @@ export default function GlitchSection({
         <CyberButton title="Discord Server" symbol="JOIN" className="w-fit h-12" />
         {/* <CyberButton title="Discord Server" className="w-fit" /> */}
       </div>
+
+      
+      <div className="reserve-nick">
+        <CyberButton title="Free nickname" description="Reserve your exclusive nickname today! The in-game nickname must be a minimum of three characters long. Basic nicknames will be free upon the game's release!" className="free-nickname" />
+        {/* <CyberButton title="Discord Server" className="w-fit" /> */}
+      </div>
     </div>
   );
 }
