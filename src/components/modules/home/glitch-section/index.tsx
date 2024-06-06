@@ -13,7 +13,7 @@ export default function GlitchSection({
   return (
     <div
       className={cn(
-        "flex flex-col items-center justify-center min-h-screen",
+        "flex flex-col items-top justify-top min-h-screen",
         distopianFont.className,
         styles.body
       )}
@@ -28,11 +28,11 @@ export default function GlitchSection({
       <p className={cn("max-w-6xl text-center", inter.className)}>
         {description}
       </p>
-      <div className="flex items-center justify-center gap-2 pt-5">
+      <div className="flex items-top justify-top gap-2 pt-5">
         <CyberButton title="Download Game" symbol="DWN" className="w-fit h-11" />
         {/* <CyberButton title="Download Game" className="w-fit" /> */}
       </div>
-      <div className="flex items-center justify-center gap-2 pt-5">
+      <div className="flex items-top justify-top gap-2 pt-5">
         <CyberButton title="Discord Server" symbol="JOIN" className="w-fit h-12" />
         {/* <CyberButton title="Discord Server" className="w-fit" /> */}
       </div>
