@@ -39,7 +39,12 @@ export default function Home() {
           <p className="text-center text-lg font-semibold mb-4">
             <strong>Price:</strong> For free
           </p>
-<button class="cybr-btn w-fit h-13">Reserve your nick here<span aria-hidden="true">_</span><span aria-hidden="true" class="cybr-btn__glitch">Reserve your nick here<!-- -->_</span><span aria-hidden="true" class="cybr-btn__tag">RESERVE</span></button>
+<button class="cybr-btn w-fit h-13">
+  Reserve your nick here
+  <span aria-hidden="true">_</span>
+  <span aria-hidden="true" class="cybr-btn__glitch">Reserve your nick here<!-- -->_</span>
+  <span aria-hidden="true" class="cybr-btn__tag">RESERVE</span>
+</button>
         </div>
 
         {/* Premium Nickname Box */}
