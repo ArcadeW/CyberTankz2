@@ -39,7 +39,7 @@ export default function Home() {
           <p className="text-center text-lg font-semibold mb-4">
             <strong>Price:</strong> For free
           </p>
-<div className="flex items-center justify-center gap-2 pt-5">
+<div className="flex items-top justify-top gap-2 pt-5">
   <CyberButton title="Download Game" symbol="DWN" className="w-fit h-11" />
 </div>
 
