@@ -361,3 +361,15 @@
 button.cybr-btn.w-fit.h-12 {
     --shadow-primary: hsl(66.98deg 100% 50%);
 }
+
+.flex.flex-col.items-center.justify-center.p-5.bg-gray-100.rounded.shadow-lg {
+    background-color: rgba(17, 18, 23);
+    border: 1px solid rgba(255, 255, 255, 0.030);
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
