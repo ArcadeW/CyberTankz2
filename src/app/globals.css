@@ -465,6 +465,7 @@ html:not(.is-mobile) ::-webkit-scrollbar-thumb {
   border: 3px solid #141414;
 }
 
+/* Cyber style */
 .flex {
   display: flex;
 }
@@ -481,52 +482,73 @@ html:not(.is-mobile) ::-webkit-scrollbar-thumb {
   justify-content: center;
 }
 
-.gap-4 > * + * {
-  margin-top: 1rem;
+.gap-4 {
+  gap: 1rem; /* Adjust as needed */
 }
 
 .p-5 {
-  padding: 1.25rem;
+  padding: 1.25rem; /* Adjust as needed */
 }
 
 .bg-gray-100 {
-  background-color: #f3f4f6;
+  background-color: hsl(0, 0%, calc(0 * 1%)); /* Adjust lightness as needed */
 }
 
 .rounded {
-  border-radius: 0.5rem;
+  border-radius: var(--border);
 }
 
 .shadow-lg {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.text-2xl {
-  font-size: 1.5rem;
+/* Glitch animation */
+@keyframes glitch {
+  0% {
+    clip-path: var(--clip);
+    transform: translate(0);
+  }
+  2% {
+    clip-path: var(--clip-one);
+    transform: translate(-2px, -2px);
+  }
+  4% {
+    clip-path: var(--clip-two);
+    transform: translate(2px, 2px);
+  }
+  6% {
+    clip-path: var(--clip-three);
+    transform: translate(-2px, -2px);
+  }
+  8% {
+    clip-path: var(--clip-four);
+    transform: translate(2px, 2px);
+  }
+  10% {
+    clip-path: var(--clip-five);
+    transform: translate(-2px, -2px);
+  }
+  12% {
+    clip-path: var(--clip-six);
+    transform: translate(2px, 2px);
+  }
+  14% {
+    clip-path: var(--clip-seven);
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    clip-path: var(--clip);
+    transform: translate(0);
+  }
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
+/* Button styles */
 .reserve-btn {
-  --primary: hsl(0, 0%, calc(0 * 1%));
+  --border: 4px; /* Adjust as needed */
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
-  --shadow-primary-hue: 180;
-  --shadow-secondary-hue: 60;
   --shadow-secondary: hsl(var(--shadow-secondary-hue), 90%, 60%);
   --clip: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 90%, 85% 90%, 85% 100%, 8% 100%, 0 70%);
-  --border: 4px;
-  --label-size: 9px;
-  --font-size: 26px;
+  display: inline-block;
   font-family: Cyber, sans-serif;
   color: var(--color);
   cursor: pointer;
@@ -541,50 +563,31 @@ html:not(.is-mobile) ::-webkit-scrollbar-thumb {
   min-width: 250px;
   transition: background .2s;
   position: relative;
-  z-index: 1;
+  overflow: hidden;
+}
+
+.reserve-btn:hover .cybr-btn__glitch {
+  display: block;
 }
 
 .reserve-btn:hover {
-  background-color: hsl(0, 0%, calc(0 * 1%));
-}
-
-.reserve-btn:before {
-  content: "";
   background: var(--shadow-primary);
-  transform: translate(var(--border));
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  clip-path: var(--clip);
-  z-index: -1;
 }
 
-.reserve-btn:after, .reserve-btn:before {
-  content: "";
+.cybr-btn__glitch {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  clip-path: var(--clip);
-  z-index: -1;
-}
-
-.reserve-btn__glitch {
-  position: absolute;
-  top: calc(var(--border)* -1);
-  left: calc(var(--border)* -1);
-  right: calc(var(--border)* -1);
-  bottom: calc(var(--border)* -1);
+  top: calc(var(--border) * -1);
+  left: calc(var(--border) * -1);
+  right: calc(var(--border) * -1);
+  bottom: calc(var(--border) * -1);
   background: var(--shadow-primary);
   text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
   clip-path: var(--clip);
   animation: glitch 2s infinite;
+  display: none;
 }
 
-.reserve-btn__tag {
+.cybr-btn__tag {
   position: absolute;
   padding: 1px 4px;
   letter-spacing: 1px;
@@ -596,29 +599,19 @@ html:not(.is-mobile) ::-webkit-scrollbar-thumb {
   font-size: var(--label-size);
 }
 
-@keyframes glitch {
-  0% {
-    clip-path: var(--clip-one);
-  }
-  14.2857% {
-    clip-path: var(--clip-two);
-  }
-  28.5714% {
-    clip-path: var(--clip-three);
-  }
-  42.8571% {
-    clip-path: var(--clip-four);
-  }
-  57.1429% {
-    clip-path: var(--clip-five);
-  }
-  71.4286% {
-    clip-path: var(--clip-six);
-  }
-  85.7143% {
-    clip-path: var(--clip-seven);
-  }
-  100% {
-    clip-path: var(--clip);
-  }
+.cybr-btn:before {
+  background: var(--shadow-primary);
+  transform: translate(var(--border));
 }
+
+.cybr-btn:after, .cybr-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  clip-path: var(--clip);
+  z-index: -1;
+}
+
