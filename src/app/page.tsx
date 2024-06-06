@@ -24,26 +24,48 @@ export default function Home() {
         are in store. Join us as we embark on a rewritten past with CyberTankz!"
       />
 
-      <div className="flex flex-col items-center justify-center gap-4 p-5">
-        {/* Free Nickname Box */}
-        <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg">
-          <img
-            src="https://i.imgur.com/bGiCzi1.png"
-            alt="Free Nickname Logo"
-            className="mb-4"
+import React from 'react';
+
+// Załóżmy, że CyberButton to poprawnie zaimplementowany komponent przycisku
+
+const ReserveNickname = () => {
+  const handleReserveClick = () => {
+    // Tutaj umieść logikę obsługi kliknięcia przycisku
+    console.log("Reserving nickname...");
+  };
+
+  return (
+    <div className="flex flex-col items-center justify-center gap-4 p-5">
+      {/* Free Nickname Box */}
+      <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg">
+        <img
+          src="https://i.imgur.com/bGiCzi1.png"
+          alt="Free Nickname Logo"
+          className="mb-4"
+        />
+        <h2 className="text-2xl font-bold mb-2">Free Nickname</h2>
+        <p className="text-center mb-4">
+          Reserve your exclusive nickname today! The in-game nickname must be a minimum of three characters long. Basic nicknames will be free upon the game's release!
+        </p>
+        <p className="text-center text-lg font-semibold mb-4">
+          <strong>Price:</strong> For free
+        </p>
+        <div className="flex items-top justify-top gap-2 pt-5">
+          {/* Przycisk rezerwacji nicku */}
+          <CyberButton
+            title="Reserve your nick here"
+            symbol="RESERVE"
+            className="w-fit h-13"
+            onClick={handleReserveClick} // Dodanie funkcji obsługującej kliknięcie
           />
-          <h2 className="text-2xl font-bold mb-2">Free Nickname</h2>
-          <p className="text-center mb-4">
-            Reserve your exclusive nickname today! The in-game nickname must be a minimum of three characters long. Basic nicknames will be free upon the game's release!
-          </p>
-          <p className="text-center text-lg font-semibold mb-4">
-            <strong>Price:</strong> For free
-          </p>
-      <div className="flex items-top justify-top gap-2 pt-5">
-        <CyberButton title="Reserve your nick here" symbol="RESERVE" className="w-fit h-13" />
-        {/* <CyberButton title="Reserve your nick here" className="w-fit" /> */}
-      </div>
         </div>
+      </div>
+    </div>
+  );
+};
+
+export default ReserveNickname;
+
 
         {/* Premium Nickname Box */}
         <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg">
