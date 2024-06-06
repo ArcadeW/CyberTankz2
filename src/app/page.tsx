@@ -39,12 +39,10 @@ export default function Home() {
           <p className="text-center text-lg font-semibold mb-4">
             <strong>Price:</strong> For free
           </p>
-<button className="cybr-btn w-fit h-13 relative overflow-hidden">
-    <span className="block">Reserve your nick here</span>
-    <span aria-hidden="true" className="cybr-btn__glitch block absolute top-0 left-0 w-full h-full text-blue-500 bg-white"></span>
-    <span aria-hidden="true" className="cybr-btn__tag block absolute top-0 left-0 w-full h-full text-red-500 bg-white">RESERVE</span>
-</button>
-
+      <div className="flex items-top justify-top gap-2 pt-5">
+        <CyberButton title="Download Game" symbol="DWN" className="w-fit h-11" />
+        {/* <CyberButton title="Download Game" className="w-fit" /> */}
+      </div>
         </div>
 
         {/* Premium Nickname Box */}
