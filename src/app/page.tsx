@@ -15,7 +15,7 @@ export default function Home() {
       <GlitchSection
         text="CyberTankz"
         description=" It's time to embark on a journey across the battlefield where the
-        past meets the present. The game will take you from 2020 to 2024 and
+        past meets the present. The game will take you from 2017 to 2020 and
         offer you an unforgettable experience. With over 31 ranks to achieve,
         each map offers familiar yet new battles and challenges. Plenty of
         special quests and unique rewards await you to make you stand out on the
