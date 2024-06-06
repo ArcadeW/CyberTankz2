@@ -464,8 +464,3 @@ html:not(.is-mobile) ::-webkit-scrollbar-thumb {
   background-color: #fafafa;
   border: 3px solid #141414;
 }
-
-html, body {
-    height: 100%;
-    overflow: auto;
-}
