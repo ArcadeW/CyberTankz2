@@ -3,9 +3,13 @@ export const links=[
         title: "Home",
         url: "/"
     },
+        {
+        title: "News",
+        url: ""
+    },
     {
         title: "Rules",
-        url: "/"
+        url: ""
     },
     {
         title: "Forum",
@@ -17,6 +21,10 @@ export const links=[
     },
     {
         title: "eSports",
+        url: ""
+    },
+        {
+        title: "Gallery",
         url: ""
     },
 ]
