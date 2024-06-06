@@ -39,12 +39,11 @@ export default function Home() {
           <p className="text-center text-lg font-semibold mb-4">
             <strong>Price:</strong> For free
           </p>
-<button className="cybr-btn relative overflow-hidden bg-black text-white px-4 py-2">
+<button className="cybr-btn relative overflow-hidden bg-black text-white px-4 py-2 border border-white">
     <span className="block">Reserve your nick here</span>
-    <span aria-hidden="true" className="cybr-btn__glitch block absolute top-0 left-0 w-full h-full text-blue-500 bg-black"></span>
-    <span aria-hidden="true" className="cybr-btn__tag block absolute top-0 left-0 w-full h-full text-red-500 bg-black">RESERVE</span>
+    <span aria-hidden="true" className="cybr-btn__glitch block absolute top-0 left-0 w-full h-full text-blue-500"></span>
+    <span aria-hidden="true" className="cybr-btn__tag block absolute top-0 left-0 w-full h-full text-red-500">RESERVE</span>
 </button>
-
         </div>
 
         {/* Premium Nickname Box */}
