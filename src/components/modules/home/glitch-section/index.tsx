@@ -32,6 +32,10 @@ export default function GlitchSection({
         <CyberButton title="Download Game" symbol="DWN" className="w-fit h-11" />
         {/* <CyberButton title="Download Game" className="w-fit" /> */}
       </div>
+      <div className="flex items-center justify-center gap-2 pt-5">
+        <CyberButton title="Discord Server" symbol="JOIN" className="w-fit h-12" />
+        {/* <CyberButton title="Discord Server" className="w-fit" /> */}
+      </div>
     </div>
   );
 }
