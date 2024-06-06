@@ -465,6 +465,58 @@ html:not(.is-mobile) ::-webkit-scrollbar-thumb {
   border: 3px solid #141414;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 > * + * {
+  margin-top: 1rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
 .reserve-btn {
   --primary: hsl(0, 0%, calc(0 * 1%));
   --shadow-primary: hsl(var(--shadow-primary-hue), 90%, 50%);
