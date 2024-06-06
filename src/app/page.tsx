@@ -23,8 +23,7 @@ export default function Home() {
         feedback, but rest assured that both new and old fan-favourite features
         are in store. Join us as we embark on a rewritten past with CyberTankz!"
       />
-
-            <div className="flex flex-col items-center justify-center gap-4 p-5">
+      
         {/* Free Nickname Box */}
         <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg">
           <img
