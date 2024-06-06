@@ -37,11 +37,29 @@ export default function GlitchSection({
         {/* <CyberButton title="Discord Server" className="w-fit" /> */}
       </div>
 
-      
-      <div className="reserve-nick">
-        <CyberButton title="Free nickname" description="Reserve your exclusive nickname today! The in-game nickname must be a minimum of three characters long. Basic nicknames will be free upon the game's release!" className="free-nickname" />
-        {/* <CyberButton title="Discord Server" className="w-fit" /> */}
-      </div>
+      <div className="flex flex-col items-center justify-center gap-4 p-5">
+  <div className="flex flex-col items-center justify-center p-5 bg-gray-100 rounded shadow-lg">
+    <img
+      src="https://i.imgur.com/bGiCzi1.png"
+      alt="Free Nickname Logo"
+      className="mb-4"
+    />
+    <h2 className="text-2xl font-bold mb-2">Free Nickname</h2>
+    <p className="text-center mb-4">
+      Reserve your exclusive nickname today! The in-game nickname must be a minimum of three characters long. Basic nicknames will be free upon the game's release!
+    </p>
+    <p className="text-center text-lg font-semibold mb-4">
+      <strong>Price:</strong> For free
+    </p>
+    <a
+      href="https://www.cybertankzforum.com/register/"
+      className="reserve-btn px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+    >
+      Reserve your nick here
+    </a>
+  </div>
+</div>
+
     </div>
   );
 }
