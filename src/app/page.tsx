@@ -40,10 +40,10 @@ export default function Home() {
             <strong>Price:</strong> For free
           </p>
           
-      <p className="flex items-top justify-top gap-2 pt-5">
+      <div className="flex items-top justify-top gap-2 pt-5">
         <CyberButton title="Reserve your nick here" symbol="RESERVE" className="w-fit h-13" />
         {/* <CyberButton title="Reserve your nick here" className="w-fit" /> */}
-      </p>
+      </div>
 
         </div>
 
